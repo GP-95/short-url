@@ -7,7 +7,7 @@
 docker compose up
 ```
 
-2. Make a POST request to localhost:3000/shorten with the body using the following JSON structure
+2. Make a POST request to localhost:3000/shorten with the body using the body containing JSON structure
 
 ```json
 {"url": "https://www.google.com"}
@@ -15,4 +15,14 @@ docker compose up
 ```
 - Note that the URL has to start with http:// or https:// due to "validation"
 
-3. Take the code from the response and make a GET request to localhost:3000/\<code\>.
+- The expected response is 
+
+```json
+{"code": "1381a8b29f7"}
+```
+
+3. Take the code from the response and make a GET request to localhost:3000/\<code\> the expected response is 
+
+```json
+{"url": "https://www.google.com"}
+```
