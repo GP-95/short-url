@@ -15,6 +15,4 @@ docker compose up
 ```
 - Note that the URL has to start with http:// or https:// due to "validation"
 
-3. Take the code from the response and make a GET request to localhost:3000/<code>.
-
-
+3. Take the code from the response and make a GET request to localhost:3000/\<code\>.
